@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 import $ from 'jquery';
 import Popper from 'popper.js';
 
@@ -11,6 +11,11 @@ window.Popper = Popper;
 require('bootstrap');
 
 import '../styles/vendor.scss';
+import '../styles/sections.scss';
+import '../styles/templates/blog-post.scss';
+import '../styles/pages/blogs.scss';
+
+import WhiteLogo from '../assets/images/logo-white.png';
 
 const TemplateWrapper = ({ children }) => (
   <div className="app">
@@ -23,40 +28,26 @@ const TemplateWrapper = ({ children }) => (
     />
     <section className="navbar-section">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" />
-        </a>
+        <Link to="/" className="navbar-brand">
+          <img src={WhiteLogo} width="30" height="30" alt="" />
+        </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+            <li className="nav-item">
+              <Link to="/blogs" className="nav-link">Blogs</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Features</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#">Disabled</a>
+              <Link to="/trips" className="nav-link">Trips</Link>
             </li>
           </ul>
         </div>
       </nav>
     </section>
     <section className="content-section">
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container">
-          <h1 className="display-3">Fluid jumbotron</h1>
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
-      </div>
-      <div className="container">
-        {children()}
-      </div>
+      {children()}
     </section>
     <section className="footer-section">
     </section>

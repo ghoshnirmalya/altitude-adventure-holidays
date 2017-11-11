@@ -1,0 +1,23 @@
+.blogs {
+  max-width: 800px;
+  margin: 50px auto 0;
+
+  &__blog {
+    margin-bottom: 50px;
+
+    .blog {
+      &__link {
+        color: #000;
+
+        &:hover {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+
+      &__title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

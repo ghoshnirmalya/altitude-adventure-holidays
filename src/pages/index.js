@@ -1,13 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+  <div className="jumbotron jumbotron-fluid">
+    <div className="container">
+      <h1 className="display-3">Fluid jumbotron</h1>
+      <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
