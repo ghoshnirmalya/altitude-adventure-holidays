@@ -1,14 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-export default function Template({
-  data
-}) {
+const BlogPost = ({data}) => {
   const { markdownRemark: post } = data;
 
   return (
     <div className="container">
-      <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+      <Helmet title={post.frontmatter.title} />
       <div className="row">
         <div className="col blog-post">
           <div className="blog-post__title text-center">
@@ -21,15 +19,4 @@ export default function Template({
   );
 }
 
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        title
-      }
-    }
-  }
-`;
+export default BlogPost;

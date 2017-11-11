@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Altitude Adventure Holidays`,
+    author: "Riddho Datta",
   },
   plugins: [
     {
