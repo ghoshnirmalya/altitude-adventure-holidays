@@ -10,12 +10,10 @@ window.Popper = Popper;
 
 require('bootstrap');
 
-import 'bootstrap/dist/css/bootstrap.css';
-
-import '../styles/global.scss';
+import '../styles/vendor.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="app">
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -23,14 +21,16 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
-        <a className="navbar-brand" href="#">Navbar</a>
+    <section className="navbar-section">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" href="#">
+          <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" />
+        </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
             </li>
@@ -45,11 +45,21 @@ const TemplateWrapper = ({ children }) => (
             </li>
           </ul>
         </div>
+      </nav>
+    </section>
+    <section className="content-section">
+      <div className="jumbotron jumbotron-fluid">
+        <div className="container">
+          <h1 className="display-3">Fluid jumbotron</h1>
+          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
       </div>
-    </nav>
-    <div className="container">
-      {children()}
-    </div>
+      <div className="container">
+        {children()}
+      </div>
+    </section>
+    <section className="footer-section">
+    </section>
   </div>
 )
 
