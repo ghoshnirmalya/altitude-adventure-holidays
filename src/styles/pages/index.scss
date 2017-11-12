@@ -10,8 +10,12 @@
     }
   }
 
-  .section {
-    margin-top: 150px;
+  .full-width-section {
+    padding: 75px 0;
+
+    &:nth-child(2n+1) {
+      background-color: #fff;
+    }
 
     &__header {
       margin-bottom: 75px;
@@ -26,6 +30,14 @@
 
       &__icon {
         width: 100%;
+      }
+    }
+
+    .card {
+      .card-img-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
