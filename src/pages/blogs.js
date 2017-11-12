@@ -3,6 +3,8 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
+import '../styles/pages/blogs.scss';
+
 class Blogs extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');

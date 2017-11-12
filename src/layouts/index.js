@@ -13,9 +13,8 @@ require('bootstrap');
 import '../styles/vendor.scss';
 import '../styles/sections.scss';
 import '../styles/templates/blog-post.scss';
-import '../styles/pages/blogs.scss';
 
-import WhiteLogo from '../assets/images/logo-white.png';
+import BlackLogo from '../assets/images/logo-black.png';
 
 const TemplateWrapper = ({ children }) => (
   <div className="app">
@@ -29,7 +28,7 @@ const TemplateWrapper = ({ children }) => (
     <section className="navbar-section">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link to="/" className="navbar-brand">
-          <img src={WhiteLogo} width="30" height="30" alt="" />
+          <img src={BlackLogo} width="30" height="30" alt="" />
         </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

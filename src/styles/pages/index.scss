@@ -1,0 +1,32 @@
+.index-page {
+  .jumbotron {
+    background: transparent;
+    background:transparent url('../../assets/images/landing-page-background.jpg') left top no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    .container {
+      margin-top: 20vh;
+    }
+  }
+
+  .section {
+    margin-top: 150px;
+
+    &__header {
+      margin-bottom: 75px;
+    }
+
+    .reason {
+      margin-bottom: 50px;
+
+      &__title {
+        margin-bottom: 25px;
+      }
+
+      &__icon {
+        width: 100%;
+      }
+    }
+  }
+}
