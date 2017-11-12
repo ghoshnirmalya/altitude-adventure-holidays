@@ -3,12 +3,14 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
+import Footer from '../components/footer';
+
 import '../styles/pages/index.scss';
 
-import Mountain1 from '../assets/icons/mountains.png';
-import Mountain2 from '../assets/icons/mountains-1.png';
-import Mountain3 from '../assets/icons/mountains-2.png';
-import Mountain4 from '../assets/icons/mountains-3.png';
+import Mountain1Image from '../assets/icons/mountains.png';
+import Mountain2Image from '../assets/icons/mountains-1.png';
+import Mountain3Image from '../assets/icons/mountains-2.png';
+import Mountain4Image from '../assets/icons/mountains-3.png';
 
 class IndexPage extends React.Component {
 
@@ -44,7 +46,7 @@ class IndexPage extends React.Component {
                   <div className="col-2">
                     <div>
                       <img
-                        src={Mountain1}
+                        src={Mountain1Image}
                         className="reason__icon"
                       />
                     </div>
@@ -60,7 +62,7 @@ class IndexPage extends React.Component {
                   <div className="col-2">
                     <div>
                       <img
-                        src={Mountain2}
+                        src={Mountain2Image}
                         className="reason__icon"
                       />
                     </div>
@@ -78,7 +80,7 @@ class IndexPage extends React.Component {
                   <div className="col-2">
                     <div>
                       <img
-                        src={Mountain3}
+                        src={Mountain3Image}
                         className="reason__icon"
                       />
                     </div>
@@ -94,7 +96,7 @@ class IndexPage extends React.Component {
                   <div className="col-2">
                     <div>
                       <img
-                        src={Mountain4}
+                        src={Mountain4Image}
                         className="reason__icon"
                       />
                     </div>
@@ -171,6 +173,9 @@ class IndexPage extends React.Component {
               </Link>
             </div>
           </div>
+        </div>
+        <div className="container-fluid section">
+          <Footer />
         </div>
       </div>
     );

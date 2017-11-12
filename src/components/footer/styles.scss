@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.footer {
+  background-color: $white-1;
+  padding: 30px 15px;
+
+  &__social-icon {
+    width: 30px;
+    margin-right: 15px;
+  }
+}
