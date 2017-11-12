@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "altitude-adventure-holidays",
+  "description": "Website for Altitude Adventure Holidays",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nirmalya Ghosh <nirmalya.email@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "gatsby": "^1.9.73",
@@ -19,7 +19,9 @@
     "slick-carousel": "^1.8.1"
   },
   "keywords": [
-    "gatsby"
+    "altitude-adventure-holidays",
+    "tourism",
+    "holidays"
   ],
   "license": "MIT",
   "main": "n/a",

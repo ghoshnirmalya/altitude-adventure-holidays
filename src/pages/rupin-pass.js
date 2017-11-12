@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
-class About extends React.Component {
+class RupinPassTrek extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
 
@@ -12,7 +12,7 @@ class About extends React.Component {
         <Helmet title={siteTitle} />
         <div className="row">
           <div className="col">
-            About
+            RupinPassTrek
           </div>
         </div>
       </div>
@@ -20,10 +20,10 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default RupinPassTrek;
 
-export const aboutQuery = graphql`
-  query AboutQuery {
+export const rupinPassTrekQuery = graphql`
+  query RupinPassTrekQuery {
     site {
       siteMetadata {
         title

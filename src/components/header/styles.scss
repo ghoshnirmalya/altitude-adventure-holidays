@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.navbar {
+  background-color: transparent !important;
+
+  .nav-link {
+    color: $black-1 !important;
+    text-transform: uppercase;
+    font-size: $fs-3;
+    font-weight: $fw-3;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

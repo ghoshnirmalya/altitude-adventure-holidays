@@ -4,17 +4,75 @@ body {
   background-color: $grey-1;
 }
 
-.navbar {
-  background-color: transparent !important;
+.landing-page {
+  .full-width-section {
+    padding: 75px 0;
 
-  .nav-link {
-    color: $black-1 !important;
-    text-transform: uppercase;
-    font-size: $fs-3;
-    font-weight: $fw-3;
+    &:nth-child(2n+1) {
+      background-color: #fff;
+    }
 
-    &:hover {
+    &__header {
+      margin-bottom: 50px;
+    }
+
+    .reason {
+      margin-bottom: 50px;
+
+      &__title {
+        margin-bottom: 25px;
+      }
+
+      &__icon {
+        width: 100%;
+      }
+    }
+
+    .card {
+      .card-img-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .link {
       text-decoration: none;
+    }
+  }
+}
+
+.list {
+  margin: 50px auto 0;
+
+  &__item {
+    margin-bottom: 50px;
+
+    .item {
+      &__link {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &__title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.blog-post {
+  margin: 50px auto 0;
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__body {
+    p {
+      margin-bottom: 50px;
     }
   }
 }

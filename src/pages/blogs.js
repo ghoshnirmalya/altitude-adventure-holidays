@@ -3,10 +3,6 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
-import Footer from '../components/footer';
-
-import '../styles/pages/blogs.scss';
-
 class Blogs extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -17,38 +13,41 @@ class Blogs extends React.Component {
         <div className="container">
           <Helmet title={siteTitle} />
           <div className="row">
-            <div className="col blogs">
-              {posts
-                .filter(post => post.node.frontmatter.type === "blog") // show only blogs
-                .map(post => {
-                if (post.node.frontmatter.path !== '/404/') {
-                  const title = get(post, 'node.frontmatter.title') || post.node.path;
+            {posts
+              .filter(post => post.node.frontmatter.type === "blog") // show only blogs
+              .map(post => {
+              if (post.node.frontmatter.path !== '/404/') {
+                const title = get(post, 'node.frontmatter.title') || post.node.path;
 
-                  return (
-                    <div
-                      key={post.node.frontmatter.path}
-                      className="blogs__blog"
-                    >
-                      <Link
-                        to={post.node.frontmatter.path}
-                        className="blog__link"
-                      >
-                        <div className="media">
-                          <div className="media-body">
-                            <h3 className="blog__title">{title}</h3>
-                            <p className="blog__body text-muted" dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-                          </div>
-                        </div>
-                      </Link>
+                return (
+                  <div
+                    key={post.node.frontmatter.path}
+                    className="col-md-4 list"
+                  >
+                    <div className="list__item">
+                    <div className="card">
+                      <div className="card-body">
+                        <Link
+                          to={post.node.frontmatter.path}
+                          className="item__link"
+                        >
+                          <h4 className="card-title">{title}</h4>
+                        </Link>
+                        <p className="card-text item__body text-muted" dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                        <Link
+                          to={post.node.frontmatter.path}
+                          className="btn btn-primary item__link"
+                        >
+                          Read more
+                        </Link>
+                      </div>
                     </div>
-                  );
-                }
-              })}
-            </div>
+                  </div>
+                </div>
+                );
+              }
+            })}
           </div>
-        </div>
-        <div className="container-fluid section">
-          <Footer />
         </div>
       </div>
     );
