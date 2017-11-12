@@ -17,6 +17,7 @@ class IndexPage extends React.Component {
 
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <div className="index-page">
@@ -42,7 +43,7 @@ class IndexPage extends React.Component {
               </div>
             </div>
             <div className="row">
-              <div className="col">
+              <div className="col-md">
                 <div className="reason">
                   <div className="row">
                     <div className="col-2">
@@ -76,7 +77,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-md">
                 <div className="reason">
                   <div className="row">
                     <div className="col-2">
@@ -279,6 +280,105 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <section className="full-width-section">
+          <div className="container">
+            <div className="row">
+              <div className="col text-center full-width-section__header">
+                <h2>Blogs</h2>
+                <p className="lead">Freshly baked stories from our kitchen</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <Slider>
+                  {posts
+                    .filter(post => post.node.frontmatter.type === "blog") // show only blogs
+                    .map(post => {
+                      if (post.node.frontmatter.path !== '/404/') {
+                        const title = get(post, 'node.frontmatter.title') || post.node.path;
+
+                        return (
+                          <div
+                            key={post.node.frontmatter.path}
+                            className="slider"
+                          >
+                            <Link
+                              to={post.node.frontmatter.path}
+                              className="link"
+                            >
+                              <div className="card">
+                                <div className="card-body">
+                                  <h4 className="card-title">{title}</h4>
+                                  <p className="card-text text-muted" dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        );
+                      }
+                    })
+                  }
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="full-width-section">
+          <div className="container">
+            <div className="row">
+              <div className="col text-center full-width-section__header">
+                <h2>Testimonials</h2>
+                <p className="lead">What others are saying about us</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <Slider>
+                  <div className="slider">
+                    <div className="card text-white bg-primary">
+                      <div className="card-body">
+                        <h4 className="card-title">Wayne Rooney</h4>
+                        <p className="card-text">
+                          Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="slider">
+                    <div className="card text-white bg-primary">
+                      <div className="card-body">
+                        <h4 className="card-title">Ryan Giggs</h4>
+                        <p className="card-text">
+                          Bring to the table win-win survival strategies to ensure proactive domination.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="slider">
+                    <div className="card text-white bg-primary">
+                      <div className="card-body">
+                        <h4 className="card-title">Paul Pogba</h4>
+                        <p className="card-text">
+                          Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="slider">
+                    <div className="card text-white bg-primary">
+                      <div className="card-body">
+                        <h4 className="card-title">Zlatan Ibrahimovic</h4>
+                        <p className="card-text">
+                          Podcasting operational change management inside of workflows to establish a framework.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer />
       </div>
     );
@@ -292,6 +392,19 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt(pruneLength: 100)
+          frontmatter {
+            path
+            date(formatString: "DD MMMM, YYYY")
+            title
+            type
+          }
+        }
       }
     }
   }

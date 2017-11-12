@@ -2,6 +2,7 @@
 path: "/major-peaks-of-indian-himalayas"
 date: "2017-07-12T17:12:33.962Z"
 title: "Major peaks of Indian Himalayas"
+type: "blog"
 ---
 
 Himalayas, Sanskrit for ‘abode of snow’.

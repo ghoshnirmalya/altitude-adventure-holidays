@@ -2,6 +2,7 @@
 path: "/the-skeleton-lake-roopkund"
 date: "2017-07-12T17:12:33.962Z"
 title: "The Skeleton Lake – Roopkund"
+type: "blog"
 ---
 
 “I’m only thinking about Hanumanji and my parents…”

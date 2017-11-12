@@ -40,7 +40,7 @@ const TemplateWrapper = ({ children }) => (
                 <Link to="/blogs" className="nav-link">Blogs</Link>
               </li>
               <li className="nav-item">
-                <Link to="/trips" className="nav-link">Trips</Link>
+                <Link to="/treks" className="nav-link">Treks</Link>
               </li>
             </ul>
           </div>

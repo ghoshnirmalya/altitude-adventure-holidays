@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 
 import '../styles/pages/blogs.scss';
 
-class Blogs extends React.Component {
+class Treks extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
@@ -19,7 +19,7 @@ class Blogs extends React.Component {
           <div className="row">
             <div className="col blogs">
               {posts
-                .filter(post => post.node.frontmatter.type === "blog") // show only blogs
+                .filter(post => post.node.frontmatter.type === "trek") // show only treks
                 .map(post => {
                 if (post.node.frontmatter.path !== '/404/') {
                   const title = get(post, 'node.frontmatter.title') || post.node.path;
@@ -55,10 +55,10 @@ class Blogs extends React.Component {
   }
 }
 
-export default Blogs;
+export default Treks;
 
-export const blogsQuery = graphql`
-  query BlogsQuery {
+export const treksQuery = graphql`
+  query TreksQuery {
     site {
       siteMetadata {
         title

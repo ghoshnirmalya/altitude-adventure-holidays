@@ -2,6 +2,7 @@
 path: "/leave-only-footprints-behind"
 date: "2017-07-12T17:12:33.962Z"
 title: "Leave ‘only’ Footprints Behind"
+type: "blog"
 ---
 
 ![Leave ‘only’ Footprints Behind](./1.jpg)
