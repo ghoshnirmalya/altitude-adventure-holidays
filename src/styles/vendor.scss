@@ -1,3 +1,4 @@
+// bootstrap
 @import '~bootstrap/scss/_functions.scss';
 @import '~bootstrap/scss/_variables.scss';
 @import '~bootstrap/scss/_mixins.scss';
@@ -12,3 +13,20 @@
 @import '~bootstrap/scss/_utilities.scss';
 @import '~bootstrap/scss/_media.scss';
 @import '~bootstrap/scss/_card.scss';
+
+// slick
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// slick overrides
+.slick-prev {
+  left: -50px !important;
+}
+
+.slick-next {
+  right: -50px !important;
+}
+
+.slick-disabled {
+  opacity: 0.25 !important;
+}

@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
 import Footer from '../components/footer';
+import Slider from '../components/slider';
 
 import '../styles/pages/index.scss';
 
@@ -122,59 +123,158 @@ class IndexPage extends React.Component {
             </div>
             <div className="row">
               <div className="col">
-                <Link to="/treks">
-                  <div className="card text-center bg-dark text-white">
-                    <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
-                    <div className="card-img-overlay">
-                      <div className="card-header">
-                        <h4 className="card-title">Kedartal</h4>
+                <Slider>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Rupin Pass</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>May 28 – June 2</span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="card-footer">
-                      <span>September 24 – October 1</span>
-                    </div>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-              <div className="col">
-                <Link to="/treks">
-                  <div className="card text-center bg-dark text-white">
-                    <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
-                    <div className="card-img-overlay">
-                      <div className="card-header">
-                        <h4 className="card-title">Goecha La</h4>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Roopkund and Ronti Saddle</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>June 4 – June 13</span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="card-footer">
-                      <span>November 5 – November 14</span>
-                    </div>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-              <div className="col">
-                <Link to="/treks">
-                  <div className="card text-center bg-dark text-white">
-                    <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
-                    <div className="card-img-overlay">
-                      <div className="card-header">
-                        <h4 className="card-title">Singalila Pass & Phokteydara</h4>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Bhaba Pass</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>August 13 – August 19</span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="card-footer">
-                      <span>December 23 – December 30</span>
-                    </div>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col text-center mt-5">
-                <Link
-                  to="/treks"
-                  className="btn btn-outline-dark"
-                >
-                  View all upcoming Treks
-                </Link>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Bhaba Pass</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>August 13 – August 19</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Parang La</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>July 10 – July 20</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Mandani Valley and Madhyamaheswar</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>September 10 – September 23</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Kedartal</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>September 24 – October 1</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Goecha La</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>November 5 – November 14</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Singalila Pass & Phokteydara</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>December 23 – December 30</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="slider">
+                    <Link to="/treks">
+                      <div className="card text-center bg-dark text-white">
+                        <img className="card-img-top" src="http://altitudeadventureholidays.com/wp-content/uploads/2016/05/IMG_1068.jpg" alt="Card image cap" />
+                        <div className="card-img-overlay">
+                          <div className="card-header">
+                            <h4 className="card-title">Singalila Pass & Phokteydara</h4>
+                          </div>
+                        </div>
+                        <div className="card-footer">
+                          <span>December 23 – December 30</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                </Slider>
               </div>
             </div>
           </div>

@@ -24,8 +24,8 @@ class About extends React.Component {
 
 export default About;
 
-export const blogsQuery = graphql`
-  query BlogsQuery {
+export const aboutQuery = graphql`
+  query AboutQuery {
     site {
       siteMetadata {
         title

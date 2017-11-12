@@ -27,3 +27,22 @@ const BlogPost = ({data}) => {
 }
 
 export default BlogPost;
+
+export const blogPostQuery = graphql`
+  query BlogPostByPath($path: String!) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      id
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+      }
+    }
+  }
+`

@@ -14,7 +14,9 @@
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-remark": "^1.7.20",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.3"
+    "popper.js": "^1.12.3",
+    "react-slick": "^0.15.4",
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby"
