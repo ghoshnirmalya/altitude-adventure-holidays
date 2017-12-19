@@ -76,3 +76,19 @@ body {
     }
   }
 }
+
+.trek {
+  background-color: $white-1;
+
+  &__image {
+    height: 50vh;
+    background-size: cover;
+  }
+
+  &__name {
+    margin: -100px 0 20px;
+    background-color: $white-1;
+    padding: 50px;
+    border-radius: 3px;
+  }
+}

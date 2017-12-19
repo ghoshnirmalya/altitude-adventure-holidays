@@ -44,7 +44,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/roopkund-and-ronti-saddle">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"

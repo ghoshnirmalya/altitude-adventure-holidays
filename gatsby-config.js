@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/altitude-adventure-holidays`,
   siteMetadata: {
     title: `Altitude Adventure Holidays`,
     author: "Riddho Datta",

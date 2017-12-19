@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 
-import Slider from '../components/slider';
 import Jumbotron from '../components/jumbotron';
 import Treks from '../components/landing-page/treks';
 import WhyUs from '../components/landing-page/why-us';
