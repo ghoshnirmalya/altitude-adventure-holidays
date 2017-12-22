@@ -19,10 +19,10 @@ class IndexPage extends React.Component {
         <Helmet title={siteTitle} />
         <Jumbotron />
         <section className="full-width-section">
-          <WhyUs />
+          <Treks />
         </section>
         <section className="full-width-section">
-          <Treks />
+          <WhyUs />
         </section>
         <section className="full-width-section">
           <Blogs posts={posts} />
