@@ -15,7 +15,7 @@ class About extends React.Component {
     return (
       <div className="page">
         <Helmet title={siteTitle} />
-        <div className="jumbotron jumbotron-fluid text-center">
+        <div className="jumbotron jumbotron-fluid text-center about">
           <div className="container">
             <h1 className="display-3">About Us</h1>
           </div>

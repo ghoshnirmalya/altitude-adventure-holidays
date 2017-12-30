@@ -4,6 +4,11 @@
   background-size: cover;
   min-height: 100vh;
 
+  &.about {
+    background:transparent url('../../assets/images/about-page-background.jpg') left top no-repeat;
+    min-height: 50vh;
+  }
+
   &.jumbotron-fluid {
     margin-bottom: 0;
   }
