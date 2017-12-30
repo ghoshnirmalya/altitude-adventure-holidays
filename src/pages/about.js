@@ -47,7 +47,7 @@ class About extends React.Component {
                     </div>
                   </div>
                   <div className="col-10">
-                    <h4 className="reason__title">Why Us</h4>
+                    <h2 className="reason__title">Why Us</h2>
                     <div className="reason__description text-muted">
                       <p>There are so many Adventure Tour operators out there today. All of them guide their
                       clients to different peaks, or passes, or valleys. All of them promise highest safety
@@ -82,7 +82,7 @@ class About extends React.Component {
               <div className="col-md">
                 <div className="row">
                   <div className="col-10">
-                    <h4 className="reason__title">Environment</h4>
+                    <h2 className="reason__title">Environment</h2>
                     <div className="reason__description text-muted">
                       <p>No, we don’t have any intentions to save the planet, if that’s what you’re expecting to
                         hear. Rather, we’re too selfish, and think only about our loved ones. The mountains,
@@ -121,7 +121,7 @@ class About extends React.Component {
                     </div>
                   </div>
                   <div className="col-10">
-                    <h4 className="reason__title">Area of Operation</h4>
+                    <h2 className="reason__title">Area of Operation</h2>
                     <div className="reason__description text-muted">
                       <p>The Himalaya have been blessed with a supreme range of mountains aptly suitable for
                         trekking up its steep slopes or climbing one of its many daring peaks. We organize
@@ -139,7 +139,7 @@ class About extends React.Component {
               <div className="col-md">
                 <div className="row">
                   <div className="col-10">
-                    <h4 className="reason__title">Happy Faces</h4>
+                    <h2 className="reason__title">Happy Faces</h2>
                     <div className="reason__description text-muted">
                       <p>‘Friendly stuff’ is a clichéd term. Our stuff members will be your ‘friends’ for life. Period.
                         One of many advantages of operating in a small team is we get lots of time to get to
