@@ -8,6 +8,7 @@ import Footer from '../components/footer';
 
 import '../styles/vendor.scss';
 import '../styles/sections.scss';
+import '../styles/cards.scss';
 
 export default class TemplateWrapper extends React.Component {
   render() {

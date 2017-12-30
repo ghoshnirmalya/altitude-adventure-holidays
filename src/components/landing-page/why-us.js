@@ -27,8 +27,8 @@ const WhyUs = () => {
                 </div>
               </div>
               <div className="col-10">
-                <h4 className="reason__title">Leverage</h4>
-                <div className="reason__description text-muted">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity.</div>
+                <h4 className="reason__title">Small Teams</h4>
+                <div className="reason__description text-muted">None of our group sizes exceed fifteen. Smaller teams mean better service, more personal attention to each and every one of you!</div>
               </div>
             </div>
           </div>
@@ -43,8 +43,8 @@ const WhyUs = () => {
                 </div>
               </div>
               <div className="col-10">
-                <h4 className="reason__title">Bring</h4>
-                <div className="reason__description text-muted">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</div>
+                <h4 className="reason__title">Safety First</h4>
+                <div className="reason__description text-muted">Zero. That's the number of injuries occurred in all of our 40+ trips till date. We always double check our gears and triple check on your health.</div>
               </div>
             </div>
           </div>
@@ -61,8 +61,8 @@ const WhyUs = () => {
                 </div>
               </div>
               <div className="col-10">
-                <h4 className="reason__title">Capitalize</h4>
-                <div className="reason__description text-muted">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</div>
+                <h4 className="reason__title">Tailor Made Trips</h4>
+                <div className="reason__description text-muted">Have a Group? We design customised Adventure Holidays to your preferred destination, at your preferred time, according to your budget. Savvy?</div>
               </div>
             </div>
           </div>
@@ -77,8 +77,8 @@ const WhyUs = () => {
                 </div>
               </div>
               <div className="col-10">
-                <h4 className="reason__title">Podcasting</h4>
-                <div className="reason__description text-muted">Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</div>
+                <h4 className="reason__title">Best Value</h4>
+                <div className="reason__description text-muted">Our prices are not 'cheap', because our services aren't. Move over 'low' and 'high' prices, welcome aboard to the 'right' price!</div>
               </div>
             </div>
           </div>

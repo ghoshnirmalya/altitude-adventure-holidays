@@ -98,7 +98,7 @@ class RupinPassTrek extends React.Component {
               </CardText>
             </CardBody>
           </Card>
-          <Card style={{ marginBottom: "50px", border: "none" }}>
+          <Card style={{ border: "none" }}>
             <CardHeader style={{ border: "1px solid rgba(0, 0, 0, 0.125)" }}>What's included</CardHeader>
             <CardBody>
               <CardText>

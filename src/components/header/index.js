@@ -41,7 +41,16 @@ export default class Header extends React.Component {
                 <Link to="/" className="nav-link">Home</Link>
               </NavItem>
               <NavItem>
-                <Link to="/blogs" className="nav-link">Blogs</Link>
+                <a
+                  href="https://medium.com/altitude-adventure-holidays"
+                  className="nav-link"
+                  target="_blank"
+                >
+                  Blog
+                </a>
+              </NavItem>
+              <NavItem>
+                <Link to="/about" className="nav-link">About</Link>
               </NavItem>
             </Nav>
           </Collapse>

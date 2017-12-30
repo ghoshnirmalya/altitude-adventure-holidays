@@ -4,6 +4,10 @@
   background-size: cover;
   min-height: 100vh;
 
+  &.jumbotron-fluid {
+    margin-bottom: 0;
+  }
+
   .container {
     margin-top: 20vh;
   }

@@ -7,7 +7,6 @@ import Jumbotron from '../components/jumbotron';
 import Treks from '../components/landing-page/treks';
 import WhyUs from '../components/landing-page/why-us';
 import Testimonials from '../components/landing-page/testimonials';
-import Blogs from '../components/landing-page/blogs';
 
 class IndexPage extends React.Component {
   render() {
@@ -15,7 +14,7 @@ class IndexPage extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
-      <div className="landing-page">
+      <div className="page">
         <Helmet title={siteTitle} />
         <Jumbotron />
         <section className="full-width-section">
@@ -23,9 +22,6 @@ class IndexPage extends React.Component {
         </section>
         <section className="full-width-section">
           <WhyUs />
-        </section>
-        <section className="full-width-section">
-          <Blogs posts={posts} />
         </section>
         <section className="full-width-section">
           <Testimonials posts={posts} />
