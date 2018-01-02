@@ -3,7 +3,7 @@
 body {
   font-family: "Lato", Arial, sans-serif;
   background-color: $grey-1;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h1,
@@ -93,18 +93,50 @@ a {
   }
 }
 
-.trek {
-  background-color: $white-1;
+.page {
+  > .row {
+    > .col-md-8,
+    > .col-md-4 {
+      padding: 0;
+    }
+  }
+
+  .full-width-section {
+    padding: 75px 0;
+
+    &:nth-child(2n) {
+      background-color: #fff;
+    }
+  }
 
   &__image {
-    height: 50vh;
     background-size: cover;
+
+    &--1 {
+      height: 70vh;
+    }
+
+    &--2,
+    &--3 {
+      height: 35vh;
+    }
   }
 
   &__name {
-    margin: -100px 0 20px;
-    background-color: $white-1;
+    margin: -70vh 0;
     padding: 50px;
     border-radius: 3px;
+    position: absolute;
+    width: 100%;
+    color: $white-1;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 70vh;
   }
+}
+
+.help-text {
+  margin-top: -5px;
+  font-size: 12px;
+  line-height: 15px;
 }
