@@ -10,7 +10,6 @@ import RupinPass2Image from '../assets/images/treks/rupin-pass-timeline-2.jpg';
 import RupinPass3Image from '../assets/images/treks/rupin-pass-timeline-3.jpg';
 import RupinPass4Image from '../assets/images/treks/rupin-pass-timeline-4.jpg';
 import RupinPass5Image from '../assets/images/treks/rupin-pass-timeline-5.jpg';
-import EnvironmentImage from '../assets/icons/environment.png';
 
 class RupinPassTrek extends React.Component {
   render() {
@@ -236,8 +235,8 @@ class RupinPassTrek extends React.Component {
                     <h2 className="reason__title">What's included</h2>
                     <div className="reason__description text-muted">
                       <p>All meals from 28th May Dinner to 2nd June Breakfast. Meals will be veg and non-veg.</p>
-                      <p>Transfer to&nbsp;Kwar from Sangla.</p>
-                      <p>Deluxe Tourist Hotel in&nbsp;Sangla.</p>
+                      <p>Transfer to Kwar from Sangla.</p>
+                      <p>Deluxe Tourist Hotel in Sangla.</p>
                       <p>Expert bilingual guide.</p>
                       <p>Services of Porters/Mules to carry all group and personal gear.</p>
                       <p>Services of Cooking Staff.</p>

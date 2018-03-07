@@ -63,7 +63,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/bhaba">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"
@@ -82,7 +82,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/parang-la">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"
@@ -101,7 +101,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/mandani-valley">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"
@@ -120,7 +120,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/kedartal">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"
@@ -139,7 +139,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/goecha-la">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"
@@ -158,7 +158,7 @@ const Treks = () => {
               </Link>
             </div>
             <div className="slider">
-              <Link to="/treks">
+              <Link to="/singalila-pass-phoktey">
                 <div className="card text-center bg-dark text-white">
                   <img
                     className="card-img-top"
